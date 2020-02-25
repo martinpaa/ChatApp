@@ -14,5 +14,5 @@ public class MessageController {
         messages.put(user, message);
     }
 
-    public getMessageForUser()
+   // public getMessageForUser()
 }
