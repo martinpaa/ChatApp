@@ -1,10 +1,17 @@
+import model.Message;
+import model.User;
 import org.junit.jupiter.api.Test;
 
 public class MessageControllerShould {
 
     @Test
-    public  void register_comment_when_user_talks(){
+    public  void save_comment_when_user_talks(){
 
-        MessageController savePost = new MessageController();
+        User user = new User("Maria");
+        Message message = new Message("ellou");
+        MessageController messageController = new MessageController();
+        messageController.save(user, message);
+
+
     }
 }
